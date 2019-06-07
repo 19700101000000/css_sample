@@ -1,0 +1,58 @@
+.content {
+  margin:  1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* 1st sample */
+.my-checkbox1 {
+  /* display: none; */
+}
+.my-checkbox1 + label::before {
+  content: "before content";
+}
+
+/* 2nd sample */
+.my-checkbox2 {
+  display: none;
+}
+.my-checkbox2 + label {/* label */
+  position: relative;
+  padding-left: 1em; /* create checkbox space */
+  /* design : position */
+  margin: 0 0 0 1em;
+}
+.my-checkbox2 + label::before {/* checkbox */
+  content: "";
+  position: absolute;
+  top:  0;
+  left: 0;
+  display: block;
+  /* design : size */
+  box-sizing: border-box;
+  width:  1em;
+  height: 1em;
+  /* design : border */
+  border-style: solid;
+  border-width: 3px;
+  border-color: skyblue;
+  border-radius: 3px;
+}
+.my-checkbox2:checked + label::after {/* checked */
+  content: "";
+  position: absolute;
+  top:  0;
+  left: 0;
+  display: block;
+  /* design : size */
+  box-sizing: border-box;
+  width:  1em;
+  height: 0.5em;
+  /* design : border */
+  border-style:  solid;
+  border-width:  0 0 3px 3px;
+  border-color:  midnightblue;
+  /* design : rotate */
+  transform: rotate(-45deg);
+}
