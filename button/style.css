@@ -1,0 +1,74 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: white;
+  /* reset button element */
+  outline: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  /* reset a element */
+  text-decoration: none;
+  color: black;
+  /* border */
+  box-sizing: border-box;
+  border-color: grey;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2em;
+}
+.button:active {
+  background-color: grey;
+  color: white;
+}
+.button-blue {
+  background-color: skyblue;
+  border-color: midnightblue;
+}
+.button-blue:active {
+  background-color: midnightblue;
+  color: white;
+}
+
+.shadow-button {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 4px;
+  padding: 0;
+  background: transparent;
+  border-style: none;
+  /* reset button element */
+  outline: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  /* reset a element */
+  text-decoration: none;
+  color: black;
+}
+.shadow-button > .button {
+  z-index: 1;
+  top: -4px;
+  left: -4px;
+}
+.shadow-button:active > .button {
+  top: 0;
+  left: 0;
+}
+.shadow-button > .shadow {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  border-style: none;
+  border-radius: 2em;
+}
+.button-blue + .shadow {
+  background-color: midnightblue;
+}
