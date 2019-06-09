@@ -1,0 +1,11 @@
+.box {
+  margin: 1em;
+  width:  100px;
+  height: 100px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: red;
+}
+.border-box {
+  box-sizing: border-box;
+}
