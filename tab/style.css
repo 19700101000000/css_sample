@@ -23,6 +23,12 @@ input {
   width: 512px;
   margin: auto;
 }
+.tab-empty {
+  flex-grow: 1;
+  border-style: solid;
+  border-color: red;
+  border-width: 0 0 0.2em;
+}
 .tab-group {
   overflow: hidden;
 }
@@ -37,6 +43,7 @@ input {
   border-color: red;
   border-width: 0.2em;
   border-radius: 1em 1em 0 0;
+  background-color: pink;
 }
 .tab-item > .tab-content {
   position: absolute;
@@ -44,15 +51,17 @@ input {
   box-sizing: border-box;
   width: 100%;
   border-style: solid;
-  border-color: blue;
-  border-width: 0.2em;
+  border-color: red;
+  border-width: 0 0.2em 0.2em;
   display: none;
+  /* design */
+  background-color: white;
 }
 input:checked + .tab-item > .tab-name {
-  background-color: red;
-  color: white;
   border-bottom-width: 0;
   padding-bottom: 0.7em;
+  border-color: red;
+  background-color: white;
 }
 input:checked + .tab-item > .tab-content {
   display: block;
