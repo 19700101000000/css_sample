@@ -44,6 +44,7 @@ input {
   border-width: 0.2em;
   border-radius: 1em 1em 0 0;
   background-color: pink;
+  cursor: pointer;
 }
 .tab-item > .tab-content {
   position: absolute;
@@ -62,6 +63,7 @@ input:checked + .tab-item > .tab-name {
   padding-bottom: 0.7em;
   border-color: red;
   background-color: white;
+  cursor: default;
 }
 input:checked + .tab-item > .tab-content {
   display: block;
