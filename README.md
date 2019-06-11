@@ -5,3 +5,4 @@
 - box\_sizing
 - checkbox\_list
 - button
+- tab
