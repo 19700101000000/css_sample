@@ -1,0 +1,55 @@
+.nav-toggle {
+  display: none;
+}
+.nav-toggler {
+  display: block;
+  position: relative;
+  height: 2em;
+  padding: 0 2em 0 0;
+  color: grey;
+}
+.nav-toggler::before {
+  content: "∨";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  border: solid 1px grey;
+  border-radius: 0.5em;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-toggle:checked + .nav-container > .nav-toggler::before {
+  content: "∧";
+}
+.nav-group {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-toggle:checked + .nav-container > .nav-group {
+  display: block;
+}
+.nav-group-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-group-item-link {
+  display: block;
+  margin: 0;
+  padding: 0.5em 1em;
+  color: skyblue;
+  text-decoration: none;
+}
+.nav-group-item-link:hover {
+  background-color: skyblue;
+  color: midnightblue;
+}
+
+.text-center {
+  text-align: center;
+}

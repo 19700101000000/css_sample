@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>media type</title>
+
+    <!-- required tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./common.css">
+    <!-- imported when less than 640px -->
+    <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+    <!-- imported when more than 640px -->
+    <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        Header
+      </header>
+
+      <nav class="nav">
+        <input type="checkbox"
+          id="nav-toggle-controller" class="nav-toggle" name="nav-toggler">
+
+        <div class="nav-container">
+          <label class="nav-toggler"
+            for="nav-toggle-controller"></label>
+
+          <ol class="nav-group text-center">
+            <li class="nav-group-item">
+              <a class="nav-group-item-link" href="#content1">content1</a>
+            </li>
+            <li class="nav-group-item">
+              <a class="nav-group-item-link" href="#content2">content2</a>
+            </li>
+            <li class="nav-group-item">
+              <a class="nav-group-item-link" href="#content3">content3</a>
+            </li>
+            <li class="nav-group-item">
+              <a class="nav-group-item-link" href="#content4">content4</a>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <main class="main">
+        <article>
+          <h1>Hello, world</h1>
+
+          <section>
+            <h2 id="content1">content1</h2>
+          </section>
+
+          <section>
+            <h2 id="content2">content2</h2>
+          </section>
+
+          <section>
+            <h2 id="content3">content3</h2>
+          </section>
+
+          <section>
+            <h2 id="content4">content4</h2>
+          </section>
+        </article>
+      </main>
+
+      <footer class="footer text-center">
+        Footer
+      </footer>
+    </div>
+  </body>
+</html>
